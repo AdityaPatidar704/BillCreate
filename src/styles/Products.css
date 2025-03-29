@@ -1,0 +1,109 @@
+/* Container */
+.product-table-container {
+    min-height: 100vh;
+    background-color: #fce4ec; /* bg-pink-50 */
+    padding: 1.5rem;
+  }
+  
+  /* Card */
+  .product-table-card {
+    max-width: 1024px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+  }
+  /* Heading */
+  .product-table-heading {
+    font-size: 1.875rem; /* text-3xl */
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    color: #2d3748; /* text-gray-800 */
+    text-align: center;
+  }
+  .product-table-link {
+    margin-right: 0.5rem;
+    color: #ed64a6; /* hover:text-pink-light */
+    transition: color 0.3s;
+  }
+  .product-table-link:hover {
+    color: #e91e63;
+  }
+  
+  /* Flex Container for Search and Button */
+  .flex-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+  }
+  
+  /* Search Input */
+  .search-input {
+    width: 50%;
+    padding: 0.5rem;
+    border: 1px solid #e2e8f0; /* border-gray-300 */
+    border-radius: 0.375rem;
+    outline: none;
+    transition: box-shadow 0.3s;
+  }
+  .search-input:focus {
+    box-shadow: 0 0 0 2px #3182ce; /* focus:ring-2 focus:ring-blue-500 */
+  }
+  
+  /* Add Product Button */
+  .add-product-btn {
+    background-color: #3182ce; /* bg-blue-500 */
+    color: white;
+    padding: 0.5rem 1.5rem;
+    border-radius: 0.375rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .add-product-btn:hover {
+    background-color: #2b6cb0; /* hover:bg-blue-600 */
+  }
+  
+  /* Table */
+  .table-container {
+    overflow-x: auto;
+  }
+  .table {
+    min-width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .table-header {
+    background-color: #ebf8ff; /* bg-blue-100 */
+    color: #4a5568; /* text-gray-700 */
+  }
+  
+  .table-row {
+    background-color: #ffffff;
+  }
+  
+  /* Modal */
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+  }
+  
+  .modal-content {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 0.375rem;
+    max-width: 500px;
+    width: 100%;
+  }
+  
+      
+    

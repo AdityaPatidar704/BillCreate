@@ -1,0 +1,94 @@
+/* .customer-profile {
+  background-color: #57eea8;
+  padding: 20px;
+  text-align: center;
+  overflow-y: hidden;
+  background-color:rgb(41, 228, 125);
+  margin-top: 4px;
+}
+
+.profile-card {
+  background: linear-gradient(40deg, #f0f2f2, #b8d1d1);
+  border: 1px solid #0f0808;
+  border-radius: 8px;
+  padding: 20px;
+  margin: auto;
+  width: 80%;
+  max-width: 400px;
+  
+}
+
+.profile-title {
+  font-size: 24px;
+  color: #0a0a0a;
+}
+
+.profile-details {
+  list-style: none;
+  padding: 0;
+  color: #677844;
+
+}
+
+.profile-item {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.profile-key {
+  font-weight: bold;
+  color: #eb4291;
+}
+
+.profile-value {
+  color: #6d6464;
+}
+.search-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+.print-button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+.print-button:hover {
+  background-color: #45a049;
+}
+.custom-button {
+background-color: #45a049;  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  font-size: 16px;
+  border-radius: 40px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.custom-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+.custom-button:active {
+  transform: scale(0.95);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+.search-input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+} */

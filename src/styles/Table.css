@@ -1,0 +1,7 @@
+.table-comp,.table-comp thead tr,.table-comp tbody tr{
+    border-bottom: 1px solid slategray;
+}
+.table-comp thead tr
+{
+    background-color: #e5e7eb;
+}
