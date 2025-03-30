@@ -203,7 +203,7 @@ export default function CustomerForm({
   const handleDebounce = debounce((value) => {
     const fetchUsingZipCode = async () => {
       try {
-        const url = `https://api.postalpincode.in/pincode/${value}`;
+        const url = `https://cors-anywhere.herokuapp.com/https://api.postalpincode.in/pincode/${value}`;
         const res = await apiReuestLoadDataUsingZipCode(url);
         setZipdata({
           country: res.data[0].PostOffice[0].Country,

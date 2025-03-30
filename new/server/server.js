@@ -19,9 +19,9 @@ app.options("/api/signup", cors());//ye mene joda h
 app.use(json());
 app.use(  
   cors({
-    origin: [ "http://localhost:5173","https://adityapatidar704.github.io/billcreate"], // ✅ Add both frontend URLs
+    origin: [ "http://localhost:5173","https://adityapatidar704.github.io"], // ✅ Add both frontend URLs
     methods: ["GET", "POST", "PUT", "DELETE"],
-    allowedHeaders: ["Content-Type", "Authorzation"], // Allowed headers
+    allowedHeaders: ["Content-Type", "Authorization"], // Allowed headers
     credentials: true, // Allow credentials like cookies or auth tokens
   })
 );
@@ -44,11 +44,6 @@ pool
   .catch((err) => console.error("Connection error", err.stack));
 
 /* ========== User Authentication ========== */
-
-app.options("/api/signup", cors());
-app.options("/api/login", cors());
-app.options("/api/products", cors());
-
 // ✅ Signup (Register)
 app.post("/api/signup", async (req, res) => {
   const { username, email, password } = req.body;
