@@ -19,7 +19,7 @@ app.options("/api/signup", cors());//ye mene joda h
 app.use(json());
 app.use(  
   cors({
-    origin: [ "http://localhost:5173","https://adityapatidar704.github.io"], // ✅ Add both frontend URLs
+    origin: [ "http://localhost:5173","https://adityapatidar704.github.io/billcreate"], // ✅ Add both frontend URLs
     methods: ["GET", "POST", "PUT", "DELETE"],
     allowedHeaders: ["Content-Type", "Authorzation"], // Allowed headers
     credentials: true, // Allow credentials like cookies or auth tokens
