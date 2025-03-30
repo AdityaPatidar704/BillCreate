@@ -46,7 +46,6 @@ function RouteComponent() {
     }, [isAuthenticated]);
 
     return (
-        <Router>
             <Routes>
                 {/* Public Routes */}
                 
@@ -85,7 +84,6 @@ function RouteComponent() {
                 <Route path="/bussiness-profile" element={<ProtectedRoute isAuthenticated={isAuthenticated} element={<Bussiness_profile />} />} />
                 <Route path="/profile_form" element={<ProtectedRoute isAuthenticated={isAuthenticated} element={<Bussiness_profile_from />} />} />
             </Routes>
-        </Router>
     );
 }
 
