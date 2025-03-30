@@ -45,6 +45,10 @@ pool
 
 /* ========== User Authentication ========== */
 
+app.options("/api/signup", cors());
+app.options("/api/login", cors());
+app.options("/api/products", cors());
+
 // ✅ Signup (Register)
 app.post("/api/signup", async (req, res) => {
   const { username, email, password } = req.body;
