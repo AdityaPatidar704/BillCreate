@@ -21,18 +21,30 @@ function CustomerDisplay({ customerListUpdated }) {
     setTimeout(()=>{
         setLoader(true);
     },1000)
-    const fetchCustomers = async () => {
-        try {
-            const res=await apiGet("/customers")
-            setCustomers(res);
-            setTotal(res.length); 
-            console.log(res)
-            console.log("customer_response");
-        } catch (error) {
-            console.error("Error fetching customers:", error);
+    const checkdata=async()=>{
+        const res=await apiGet("/check-data");
+        console.log(res);
+        if(res=="No data")
+        {
+          alert("you need to first register a busiiness profile");
+          navigate("/profile_form");
         }
-    };
-    fetchCustomers();
+        else{
+          const fetchCustomers = async () => {
+            try {
+                const res=await apiGet("/customers")
+                setCustomers(res);
+                setTotal(res.length); 
+                console.log(res)
+                console.log("customer_response");
+            } catch (error) {
+                console.error("Error fetching customers:", error);
+            }
+        };
+        fetchCustomers();
+        }
+    }
+    checkdata();
 }, []);
 
   // Filter customers based on search input

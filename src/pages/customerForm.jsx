@@ -165,39 +165,39 @@ export default function CustomerForm({
         console.log("working");
       }
       alert(JSON.stringify(values));
-      // const addCustomersData = async () => {
-      //   try {
-      //     const token = localStorage.getItem("token");
-      //     const res = await apiPost("customers", values);
-      //     alert(JSON.stringify(values));
-      //     // navigate("/display");
-      //   } catch (err) {
-      //     console.log(err);
-      //   }
-      // };
-      // addCustomersData();
+      const addCustomersData = async () => {
+        try {
+          const token = localStorage.getItem("token");
+          const res = await apiPost("customers", values);
+          alert(JSON.stringify(values));
+          // navigate("/display");
+        } catch (err) {
+          console.log(err);
+        }
+      };
+      addCustomersData();
       alert(JSON.stringify(values));
     },
-    validationSchema: yup.object({
-      customer_name: yup.string().required("Customer Name is required field"),
-      email: yup
-        .string()
-        .email("Invalid Email Format")
-        .required("Email is required field"),
-      mobile_no: yup
-        .string()
-        .matches(/^[0-9]{10}$/, "Mobile number must be exaclty 10 digit")
-        .required("mobile no is required field"),
-      pan_no: yup.string().required("Pan number is required field"),
-      billing_address: yup
-        .string()
-        .required("Billing address is required field"),
-      shipping_address: yup
-        .string()
-        .required("Shipping address is required field"),
-      opening_value: yup.string().required("Opening Value is required field"),
-      tax_id: yup.string().required("GSTIN is required field"),
-    }),
+    // validationSchema: yup.object({
+    //   customer_name: yup.string().required("Customer Name is required field"),
+    //   email: yup
+    //     .string()
+    //     .email("Invalid Email Format")
+    //     .required("Email is required field"),
+    //   mobile_no: yup
+    //     .string()
+    //     .matches(/^[0-9]{10}$/, "Mobile number must be exaclty 10 digit")
+    //     .required("mobile no is required field"),
+    //   pan_no: yup.string().required("Pan number is required field"),
+    //   billing_address: yup
+    //     .string()
+    //     .required("Billing address is required field"),
+    //   shipping_address: yup
+    //     .string()
+    //     .required("Shipping address is required field"),
+    //   opening_value: yup.string().required("Opening Value is required field"),
+    //   tax_id: yup.string().required("GSTIN is required field"),
+    // }),
   });
 
   const handleDebounce = debounce((value) => {
@@ -281,7 +281,7 @@ export default function CustomerForm({
                 classNameInput="w-full p-2 border rounded mt-1"
                 placeholder="Customer Name"
               />
-              <span>{formik.errors.customer_name}</span>
+              {/* <span>{formik.errors.customer_name}</span> */}
             </div>
             <div>
               <InputComponent
@@ -294,7 +294,7 @@ export default function CustomerForm({
                 classNameInput="w-full p-2 border rounded mt-1"
                 placeholder="Enter Email Id"
               />
-              <span>{formik.errors.email}</span>
+              {/* <span>{formik.errors.email}</span> */}
             </div>
             <div>
               <InputComponent
@@ -308,7 +308,7 @@ export default function CustomerForm({
                 classNameInput="w-full p-2 border rounded mt-1"
                 placeholder="Enter GSTN"
               />
-              <span>{formik.errors.tax_id}</span>
+              {/* <span>{formik.errors.tax_id}</span> */}
             </div>
             <div>
               <InputComponent
@@ -338,7 +338,7 @@ export default function CustomerForm({
                 className="w-full p-2 border rounded mt-1"
                 placeholder="Enter Billing Address"
               ></textarea>
-              <span>{formik.errors.billing_address}</span>
+              {/* <span>{formik.errors.billing_address}</span> */}
             </div>
             <div className="mt-4 flex items-center">
               <InputComponent
@@ -364,7 +364,7 @@ export default function CustomerForm({
                 classNameInput="w-full p-2 border rounded mt-1"
                 placeholder="Enter Opening Value"
               />
-              <span>{formik.errors.opening_value}</span>
+              {/* <span>{formik.errors.opening_value}</span> */}
             </div>
           </div>
           <div>
@@ -403,7 +403,7 @@ export default function CustomerForm({
                 classNameInput="w-full p-2 border rounded mt-1"
                 placeholder="Enter Phone Number"
               />
-              <span>{formik.errors.mobile_no}</span>
+              {/* <span>{formik.errors.mobile_no}</span> */}
             </div>
             <div>
               <InputComponent
@@ -449,7 +449,7 @@ export default function CustomerForm({
                 className="w-full p-2 border rounded mt-1"
                 placeholder="Enter Shipping Address"
               ></textarea>
-              <span>{formik.errors.shipping_address}</span>
+              {/* <span>{formik.errors.shipping_address}</span> */}
             </div>
           </div>
         </div>

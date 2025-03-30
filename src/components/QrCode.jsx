@@ -1,7 +1,7 @@
 import React from 'react';
 import { QRCodeSVG } from 'qrcode.react';
 
-export function QrCode({ value, size = 100, ...rest }) {
+export function QrCode({ value, size = 140, ...rest }) {
     // Check if the value is valid
     if (!value) {
         console.error("Invalid value for QR Code:", value);

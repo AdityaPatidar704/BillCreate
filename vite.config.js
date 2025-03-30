@@ -6,7 +6,7 @@ export default defineConfig({
   optimizeDeps: {
     exclude: ['qrcode.react'], // Exclude qrcode.react from being optimized
   },
+  base: '/BillCreate/',
   plugins: [react(), tailwindcss(),],
-  base:"/BillNew",
   
 })

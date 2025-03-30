@@ -130,6 +130,7 @@ const Products = () => {
       <TableComponent
         column={column}
         data={tableData}
+        name="product"
         fullData={filteredProducts}
         pageSize={3} // Number of rows per page
         generateQr="true"

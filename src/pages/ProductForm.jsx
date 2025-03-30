@@ -58,8 +58,8 @@ function handleCustomFieldChange(index, value) {
       values.product_category=product_category;
       alert(JSON.stringify(values));
       
-        // const res=await apiPost("/products/add",values);
-        // alert(res);
+        const res=await apiPost("/products/add",values);
+        alert(res);
   //     try {
   //       const token = localStorage.getItem("token");
   //       // const response = await axios.post("http://localhost:5003/products/add", values, {
